@@ -1,6 +1,6 @@
 {
 	"name": "@straits/utils",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Utility library for straits",
 	"main": "dist/index.js",
 	"scripts": {
@@ -34,5 +34,5 @@
 	],
 	"homepage": "https://github.com/peoro/straits-utils#readme",
 	"bugs": "https://github.com/peoro/straits-utils/issues",
-	"repository": "github:peoro/straits-util"
+	"repository": "github:peoro/straits-utils"
 }
