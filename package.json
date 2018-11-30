@@ -1,0 +1,38 @@
+{
+	"name": "@straits/utils",
+	"version": "1.0.0",
+	"description": "Utility library for straits",
+	"main": "dist/index.js",
+	"scripts": {
+		"watch": "babel --watch src --out-dir dist",
+		"prepare": "babel src --out-dir dist",
+		"pretest": "eslint src",
+		"test": "nyc mocha --require @babel/register test/index.js",
+		"coverage": "nyc report --reporter=lcov"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.1.5",
+		"@babel/core": "^7.1.6",
+		"@babel/node": "^7.0.0",
+		"@babel/plugin-transform-strict-mode": "^7.0.0",
+		"@straits/eslint-config": "^1.0.1",
+		"eslint": "^5.9.0",
+		"mocha": "^5.2.0",
+		"nyc": "^13.1.0",
+		"straits-babel": "^2.0.0"
+	},
+	"author": "peoro",
+	"license": "MIT",
+	"keywords": [
+		"straits",
+		"traits",
+		"util",
+		"utils",
+		"traitset"
+	],
+	"homepage": "https://github.com/peoro/straits-utils#readme",
+	"bugs": "https://github.com/peoro/straits-utils/issues",
+	"repository": "github:peoro/straits-util"
+}
