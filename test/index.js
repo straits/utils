@@ -64,9 +64,19 @@ describe(`@straits/utils`, function(){
 			checkABTraitSet( traitSet );
 		});
 		it(`TraitSet constructor`, function(){
-			const traitSet1 = TraitSet.fromStrings(['a', 'b']);
-			const traitSet = new TraitSet( traitSet1 );
-			checkABTraitSet( traitSet );
+			{
+				const traitSet = new TraitSet();
+				assert.deepStrictEqual( Object.keys(traitSet), [] );
+			}
+
+			{
+				const traitSet = new TraitSet({
+					a: Symbol(),
+					b: Symbol(),
+					c: {},
+				});
+				checkABTraitSet( traitSet );
+			}
 		});
 		it(`traitSet.asFreeFunctions()`, function(){
 			const traitSet = TraitSet.fromStrings(['a', 'b']);
