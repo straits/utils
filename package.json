@@ -10,18 +10,17 @@
 		"test": "nyc mocha --require @babel/register test/index.js",
 		"coverage": "nyc report --reporter=lcov"
 	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"@babel/cli": "^7.1.5",
-		"@babel/core": "^7.1.6",
-		"@babel/node": "^7.0.0",
-		"@babel/plugin-transform-strict-mode": "^7.0.0",
+		"@babel/cli": "^7.2.0",
+		"@babel/core": "^7.2.2",
+		"@babel/node": "^7.2.2",
+		"@babel/plugin-transform-strict-mode": "^7.2.0",
+		"@straits/babel": "^1.0.0",
 		"@straits/eslint-config": "^1.0.1",
-		"eslint": "^5.9.0",
+		"eslint": "^5.10.0",
 		"mocha": "^5.2.0",
-		"nyc": "^13.1.0",
-		"straits-babel": "^2.0.0"
+		"nyc": "^13.1.0"
 	},
 	"author": "peoro",
 	"license": "MIT",
